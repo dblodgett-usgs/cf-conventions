@@ -122,6 +122,9 @@ include::appl.adoc[]
 include::appm.adoc[]
 
 :numbered!:
+include::terminology.adoc[]
+
+:numbered!:
 include::history.adoc[]
 
 :numbered!:

@@ -1,8 +1,14 @@
-==  Components of a CF Dataset
+[[dataset-components, Chapter 2, Structure of a CF Dataset]]
+==  Structure of a CF Dataset
 
-The components of a CF dataset are those listed in <<terminology>>.
-This section describes the conventions that apply to them, using the netCDF encoding, whose components are described in section 2 of the <<NUG>>, as the reference.
-New attributes for describing the contents of a dataset are also introduced.
+Any structural encoding or file format used with CF must provide certain dataset components, stated as follows in the terms of the netCDF data model, which is implemented by the netCDF Application Programmer Interface <<NetCDF>>, the original and reference encoding of CF:
+
+1. dimensions, each with a name and a size, shared by the variables within a group;
+2. variables, each with a name, a data type, an ordered list of dimensions and an array of values whose axes correspond to those dimensions, including variables with no dimensions (scalars), which hold a single value;
+3. attributes, each with a name, a data type and a value, attached either to a variable or to a group;
+4. a root group holding the dimensions, variables and attributes of the dataset, optionally with child groups (see <<groups>>).
+
+This chapter describes the structure of a CF dataset, based on these components.
 
 === Filename
 
