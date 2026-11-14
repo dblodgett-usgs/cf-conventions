@@ -93,7 +93,7 @@ Once the variables containing coordinate data are identified, further convention
 Latitude, longitude, and time coordinates are identified solely by the value of their **`units`** attribute.
 Vertical coordinates with units of pressure may also be identified by the **`units`** attribute.
 Other vertical coordinates must use the attribute **`positive`** which determines whether the direction of increasing coordinate value is up or down.
-Because identification of a coordinate type by its units involves the use of an external definition of units <<UDUNITS>>, the optional attribute **`axis`** is provided for a direct identification of coordinates that correspond to latitude, longitude, vertical, or time axes.
+Because identification of a coordinate type by its units involves the use of an external resource (<<UDUNITS>>, needed for the definition of units), the optional attribute **`axis`** is provided for a self-contained identification of coordinates that correspond to latitude, longitude, vertical, or time axes.
 
 Latitude, longitude, and time are defined by internationally recognized standards, and hence, identifying the coordinates of these types is sufficient to locate data values uniquely with respect to time and a point on the earth's surface.
 On the other hand identifying the vertical coordinate is not necessarily sufficient to locate a data value vertically with respect to the earth's surface.

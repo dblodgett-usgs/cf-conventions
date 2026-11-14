@@ -10,11 +10,17 @@ Any structural encoding or file format used with CF must provide certain dataset
 
 This chapter describes the structure of a CF dataset, based on these components.
 
-=== Filename
+[[dataset-storage, Section 2.1, "Dataset Storage"]]
+=== Dataset Storage
 
 A CF dataset should be stored in a way that conforms with the conventions of its encoding.
 NetCDF files should have the file name extension "**`.nc`**".
 A dataset in another structural encoding is identified according to the conventions of the encoding, for example a Zarr hierarchy by the metadata of its root group.
+
+A CF dataset is not necessarily a single file.
+Variables named by its attributes may be stored outside it (see <<external-variables>>).
+The data of an aggregation variable are stored in other datasets, which may have a different encoding (see <<aggregation-variables>>).
+A dataset read through the netCDF API may be served from a store that is not a netCDF file.
 
 === Data Types
 

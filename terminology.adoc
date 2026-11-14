@@ -19,7 +19,7 @@ boundary variable:: A boundary variable is associated with a variable that conta
 When a data value provides information about conditions in a cell occupying a region of space/time or some other dimension, the boundary variable provides a description of cell extent.
 
 CDL syntax:: The ascii format used to describe the contents of a dataset is called CDL (network Common Data form Language).
-It applies to a dataset in any encoding that provides the components listed in <<dataset-components>>.
+Although devised specifically for netCDF, CDL can be applied to a dataset in any encoding that provides the components listed in <<dataset-components>>.
 This format represents arrays using the indexing conventions of the C programming language, i.e., index values start at 0, and in multidimensional arrays, when indexing over the elements of the array, it is the last declared dimension that is the fastest varying in terms of file storage order.
 The netCDF utilities ncdump and ncgen use this format (see
 link:$$https://docs.unidata.ucar.edu/nug/current/_c_d_l.html$$[NUG section on CDL syntax]).
